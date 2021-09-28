@@ -17,6 +17,7 @@ export const contentQuery = graphql`
           childPagesJson {
             compute {
               storage
+              expire
             }
           }
         }
@@ -107,6 +108,7 @@ export default function Results({
         </Button>
       )}
       <FormHelp className={styles.help}>{content.compute.storage}</FormHelp>
+      <FormHelp className={styles.help}>{content.compute.expire}</FormHelp>
     </div>
   )
 }
