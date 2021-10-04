@@ -50,7 +50,6 @@ function DetailsAssets({ job }: { job: ComputeJobMetaData }) {
     async function getAlgoMetadata() {
       const ddo = await retrieveDDO(job.algoDID, newCancelToken())
       setAlgoDtSymbol(ddo.dataTokenInfo.symbol)
-
       const { attributes } = ddo.findServiceByType('metadata')
       setAlgoName(attributes?.main.name)
     }
@@ -75,7 +74,6 @@ export default function Details({
   job: ComputeJobMetaData
 }): ReactElement {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
-
   return (
     <>
       <Button style="text" size="small" onClick={() => setIsDialogOpen(true)}>
@@ -101,10 +99,10 @@ export default function Details({
             />
           )}
           <MetaItem title="Job ID" content={<code>{job.jobId}</code>} />
-          {job.resultsDid && (
+          {job.results && (
             <MetaItem
               title="Published Results DID"
-              content={<code>{job.resultsDid}</code>}
+              content={<code>{job.results}</code>}
             />
           )}
         </div>

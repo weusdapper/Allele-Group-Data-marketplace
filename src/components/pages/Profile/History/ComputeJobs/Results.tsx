@@ -38,10 +38,9 @@ export default function Results({
   const [isLoading, setIsLoading] = useState(false)
   const [hasFetched, setHasFetched] = useState(false)
   const isFinished = job.dateFinished !== null
-
   async function getResults() {
     if (!account || !ocean || !job) return
-
+    console.log('JOB: ', job)
     try {
       setIsLoading(true)
       const jobStatus = await ocean.compute.status(
@@ -49,11 +48,12 @@ export default function Results({
         job.did,
         undefined,
         undefined,
-        job.jobId
+        job.jobId,
+        undefined
       )
+      console.log('JOB STATUS: ', jobStatus)
       if (jobStatus?.length > 0) {
-        job.algorithmLogUrl = jobStatus[0].algorithmLogUrl
-        job.resultsUrl = jobStatus[0].resultsUrl
+        console.log('RESULTS : ', jobStatus[0].results)
       }
     } catch (error) {
       Logger.error(error.message)
