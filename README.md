@@ -368,7 +368,7 @@ We encourage you to fork this repository and create your own data marketplace. W
 
 - The typeface is copyright protected and needs to be changed unless you purchase a license for it.
 - The Ocean Protocol logo is a trademark of the Ocean Protocol Foundation and must be removed from forked versions of the market.
-- The name "Ocean Market" is also copyright protected and should be changed to the name of your market.
+- The name "Formidable Data Market" is also copyright protected and should be changed to the name of your market.
 
 Additionally, we would also advise that your retain the text saying "Powered by Ocean Protocol" on your forked version of the marketplace in order to give credit for the development work done by the Ocean Protocol team.
 
@@ -376,7 +376,7 @@ Everything else is made open according to the apache2 license. We look forward t
 
 ## 💻 Advanced Features
 
-Ocean Market also includes a number of advanced features that are suitable for an enterprise data market, such as:
+Formidable Data Market also includes a number of advanced features that are suitable for an enterprise data market, such as:
 
 - Role based access control
 - Allow and deny lists

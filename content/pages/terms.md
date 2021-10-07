@@ -27,7 +27,7 @@ Formidable Data Marketplace Terms and Conditions (this “**Agreement**”) is m
 
 “**Privacy Policy**” means the privacy policy located at https://www.oceanprotocol.com (and any successor or related locations designated by Ocean), as it may be updated by Ocean from time to time.
 
-“**Purgatory**” means a state in which a publisher or data asset is tagged in Ocean Market. The purgatory policies are located at https://github.com/oceanprotocol/list-purgatory/tree/main/policies
+“**Purgatory**” means a state in which a publisher or data asset is tagged in Formidable Data Market. The purgatory policies are located at https://github.com/oceanprotocol/list-purgatory/tree/main/policies
 
 “**Service**” means each of the services made available by Ocean or its affiliates, including those web services described in the Service Terms. Services do not include Third-Party Content.
 
@@ -55,7 +55,7 @@ Formidable Data Marketplace Terms and Conditions (this “**Agreement**”) is m
 
 **2.2** If Customer continues to use the Formidable Data Marketplace after the Modifications Effective Date, Customer will be deemed to be bound by the modified terms as of the Modifications Effective Date.
 
-**2.3** If Customer objects to the software modifications , the Customer may cease to use the Ocean Market.
+**2.3** If Customer objects to the software modifications , the Customer may cease to use the Formidable Data Market.
 
 **3 SECURITY – DATA PROTECTION**
 
@@ -65,7 +65,7 @@ Formidable Data Marketplace Terms and Conditions (this “**Agreement**”) is m
 
 **3.3** Transactions that take place on the Formidable Data Marketplace are managed and confirmed via the Ethereum blockchain. Your Ethereum public address will be made publicly visible whenever you engage in a transaction on the Formidable Data Marketplace.
 
-**3.4** We neither own nor control MetaMask, Coinbase, Google Chrome, the Ethereum network, or any other third parties site, product, or service that you might access, visit, or use for the purpose of enabling you to use the various features of the Ocean Market. We will not be liable for the acts or omissions of any such third parties, nor will we be liable for any damage that you may suffer as a result of your transactions or any other interaction with any such third parties.
+**3.4** We neither own nor control MetaMask, Coinbase, Google Chrome, the Ethereum network, or any other third parties site, product, or service that you might access, visit, or use for the purpose of enabling you to use the various features of the Formidable Data Market. We will not be liable for the acts or omissions of any such third parties, nor will we be liable for any damage that you may suffer as a result of your transactions or any other interaction with any such third parties.
 
 **3.5** We use the minimum amount of cookies and similar tracking technologies to track the activity on our websites and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our services. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our services.
 
@@ -75,9 +75,9 @@ Formidable Data Marketplace Terms and Conditions (this “**Agreement**”) is m
 
 **4.1** Customer is responsible for all activities, regardless of whether the activities are authorized by Customer or undertaken by Customer, Customer’s employees or a third party (including Customer’s contractors, agents or End Users). Ocean and its affiliates are not responsible for unauthorized access to Customer Account.
 
-**4.2** Customer will ensure that published assets and Customer and End Users’ use of published assets or the Ocean Market will not violate any of the Policies or any applicable law. The Customer is solely responsible for the development, content, operation, maintenance, and use of published assets.
+**4.2** Customer will ensure that published assets and Customer and End Users’ use of published assets or the Formidable Data Market will not violate any of the Policies or any applicable law. The Customer is solely responsible for the development, content, operation, maintenance, and use of published assets.
 
-**4.3** Where Customer permits, assists or facilitates such action, Customer will be deemed to have taken any action by any person or entity related to this Agreement, published assets or use of the Ocean Market. Customer is responsible for End Users’ use of published assets and the Ocean Market. Customer will ensure that all End Users comply with obligations mirroring those of Customer under this Agreement and that the terms of Customer’s agreements with each End User are consistent with this Agreement. If Customer becomes aware of any violation of Customer’s obligations under this Agreement caused by an End User, Customer will immediately suspend access to published assets and the Formidable Data Marketplace by such End User. Ocean does not provide any support or services to End Users, unless Ocean has a separate agreement with Customer or an End User obligating Ocean to provide such support or services.
+**4.3** Where Customer permits, assists or facilitates such action, Customer will be deemed to have taken any action by any person or entity related to this Agreement, published assets or use of the Formidable Data Market. Customer is responsible for End Users’ use of published assets and the Formidable Data Market. Customer will ensure that all End Users comply with obligations mirroring those of Customer under this Agreement and that the terms of Customer’s agreements with each End User are consistent with this Agreement. If Customer becomes aware of any violation of Customer’s obligations under this Agreement caused by an End User, Customer will immediately suspend access to published assets and the Formidable Data Marketplace by such End User. Ocean does not provide any support or services to End Users, unless Ocean has a separate agreement with Customer or an End User obligating Ocean to provide such support or services.
 
 **5 FEES, PAYMENT**
 
@@ -113,7 +113,7 @@ Customer acknowledges and agrees that the Commission will be transferred directl
 
 **7 PURGATORY & TERMINATION**
 
-**7.1** Purgatory is a state in which a publisher or data asset is tagged as "in purgatory". Being in purgatory has implications into how the asset is displayed in Ocean Market, and what actions are permitted to be performed on the asset. Once in purgatory, the asset or publisher may stay there or leave purgatory if certain conditions are fulfilled.
+**7.1** Purgatory is a state in which a publisher or data asset is tagged as "in purgatory". Being in purgatory has implications into how the asset is displayed in Formidable Data Market, and what actions are permitted to be performed on the asset. Once in purgatory, the asset or publisher may stay there or leave purgatory if certain conditions are fulfilled.
 
 **7.2** This agreement can be terminated at any time by discontinuing Customer access to and use of the Formidable Data Marketplace. You will not receive any refunds, you agree that we, in our sole discretion and for any or no reason, may terminate these Terms and suspend and/or terminate the access to the Formidable Data Marketplace and that we will not be liable to you or to any third party for any such suspension or termination.
 
