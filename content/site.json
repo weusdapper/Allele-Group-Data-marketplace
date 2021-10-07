@@ -1,7 +1,7 @@
 {
   "site": {
     "siteTitle": "Formidable Data Market",
-    "siteTagline": "A marketplace to find, publish and trade data sets in the Ocean Network.",
+    "siteTagline": "The Formidable Marketplace for buying and selling data assets",
     "siteUrl": "https://market.oceanprotocol.com",
     "siteIcon": "node_modules/@oceanprotocol/art/logo/favicon-white.png",
     "siteImage": "../src/images/share.png",
