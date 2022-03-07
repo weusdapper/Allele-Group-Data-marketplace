@@ -38,6 +38,7 @@ export default function TradeInput({
     (name === 'datatoken' && values.type === 'sell')
   const titleAvailable = isTopField ? `Balance` : `Available from pool`
   const titleMaximum = isTopField ? `Maximum to spend` : `Maximum to receive`
+  const decimalPattern = new RegExp('/^d*.?d*$/')
 
   return (
     <section className={styles.tradeInput}>
@@ -52,17 +53,28 @@ export default function TradeInput({
       <Field name={name}>
         {({ field, form }: { field: FieldInputProps<number>; form: any }) => (
           <Input
-            type="number"
+            type="text"
             max={`${item?.maxAmount}`}
             min="0"
-            step="0.01"
+            step="1"
+            precision={3}
+            // pattern="/^[0-9\b]+$/"
             prefix={item?.token}
             placeholder="0"
             field={field}
             form={form}
             value={`${field.value}`}
             onChange={(e: ChangeEvent<HTMLInputElement>) => {
-              handleValueChange(name, Number(e.target.value))
+              console.log(e.target.value)
+              if (
+                e.target.value === '' ||
+                decimalPattern.test(e.target.value)
+              ) {
+                console.log(
+                  e.target.value === '' || decimalPattern.test(e.target.value)
+                )
+                handleValueChange(name, Number(e.target.value))
+              }
               validateForm()
               handleChange(e)
             }}
