@@ -1,8 +1,8 @@
 import { FormTradeData } from './_types'
 
 export const initialValues: FormTradeData = {
-  baseToken: undefined,
-  datatoken: undefined,
+  baseToken: '0',
+  datatoken: '0',
   type: 'buy',
   output: 'exactIn',
   slippage: '5'
