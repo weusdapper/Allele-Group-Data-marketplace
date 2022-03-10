@@ -70,11 +70,6 @@ export default function TradeInput({
             form={form}
             value={`${field.value}`}
             onChange={(e: ChangeEvent<HTMLInputElement>) => {
-              console.log(
-                'E TARGET VALUE',
-                parseFloat(e.target.value),
-                decimalPattern.test(e.target.value)
-              )
               // if (
               //   e.target.value === '' ||
               //   decimalPattern.test(e.target.value)
@@ -82,7 +77,7 @@ export default function TradeInput({
               //   console.log(
               //     e.target.value === '' || decimalPattern.test(e.target.value)
               //   )
-              handleValueChange(name, parseFloat(e.target.value))
+              handleValueChange(name, Number(e.target.value))
               // }
               validateForm()
               handleChange(e)

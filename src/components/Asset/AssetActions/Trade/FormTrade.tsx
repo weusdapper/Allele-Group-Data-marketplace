@@ -68,8 +68,6 @@ export default function FormTrade({
 
   async function handleTrade(values: FormTradeData) {
     if (!web3 || !asset || !poolInfo || !values) return
-    console.log('VALUES: ', values)
-
     try {
       const poolInstance = new Pool(web3)
       let tx

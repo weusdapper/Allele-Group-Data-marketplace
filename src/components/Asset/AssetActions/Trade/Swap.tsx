@@ -193,7 +193,6 @@ export default function Swap({
       let tokenOut = ''
       const poolInstance = new Pool(web3)
       let newValue: PoolPriceAndFees
-      console.log('VALUE : ', value)
       if (name === 'baseToken') {
         if (values.type === 'sell') {
           newValue = await poolInstance.getAmountInExactOut(
