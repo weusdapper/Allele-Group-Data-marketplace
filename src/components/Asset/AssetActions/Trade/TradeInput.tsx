@@ -28,7 +28,6 @@ export default function TradeInput({
   // Connect with form
   const {
     handleChange,
-    setFieldValue,
     validateForm,
     values
   }: FormikContextType<FormTradeData> = useFormikContext()
@@ -38,7 +37,7 @@ export default function TradeInput({
     (name === 'datatoken' && values.type === 'sell')
   const titleAvailable = isTopField ? `Balance` : `Available from pool`
   const titleMaximum = isTopField ? `Maximum to spend` : `Maximum to receive`
-  const decimalPattern = new RegExp('/^[+-]?([0-9]+.?[0-9]*|.[0-9]+)$/')
+  const decimalPattern = new RegExp('/^[0-9.]+$/')
 
   return (
     <section className={styles.tradeInput}>
@@ -60,26 +59,31 @@ export default function TradeInput({
         }) => (
           <Input
             type="text"
+            name={name}
             max={`${item?.maxAmount}`}
             min="0"
-            step="any"
-            // pattern="/^[0-9\b]+$/"
+            step="0.1"
+            pattern="/^[0-9.]+$/"
             prefix={item?.token}
             placeholder="0"
             field={field}
             form={form}
             value={`${field.value}`}
             onChange={(e: ChangeEvent<HTMLInputElement>) => {
-              console.log(e.target.value)
-              if (
-                e.target.value === '' ||
+              console.log(
+                'E TARGET VALUE',
+                parseFloat(e.target.value),
                 decimalPattern.test(e.target.value)
-              ) {
-                console.log(
-                  e.target.value === '' || decimalPattern.test(e.target.value)
-                )
-                handleValueChange(name, Number(parseInt(e.target.value)))
-              }
+              )
+              // if (
+              //   e.target.value === '' ||
+              //   decimalPattern.test(e.target.value)
+              // ) {
+              //   console.log(
+              //     e.target.value === '' || decimalPattern.test(e.target.value)
+              //   )
+              handleValueChange(name, parseFloat(e.target.value))
+              // }
               validateForm()
               handleChange(e)
             }}

@@ -50,7 +50,7 @@ export default function FormTrade({
           Number(maximumBaseToken),
           (param) => `Must be less or equal to ${param.max}`
         )
-        .min(0, (param) => `Must be more or equal to ${param.min}`)
+        .min(0.001, (param) => `Must be more or equal to ${param.min}`)
         .required('Required')
         .nullable(),
       datatoken: Yup.number()
@@ -58,7 +58,7 @@ export default function FormTrade({
           Number(maximumDt),
           (param) => `Must be less or equal to ${param.max}`
         )
-        .min(0, (param) => `Must be more or equal to ${param.min}`)
+        .min(0.00001, (param) => `Must be more or equal to ${param.min}`)
         .required('Required')
         .nullable(),
       type: Yup.string(),
