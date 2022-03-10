@@ -45,7 +45,7 @@ export default function FormTrade({
 
   const validationSchema: Yup.SchemaOf<FormTradeData> = Yup.object()
     .shape({
-      baseToken: Yup.number()
+      baseToken: Yup.string()
         .max(
           Number(maximumBaseToken),
           (param) => `Must be less or equal to ${param.max}`
@@ -53,7 +53,7 @@ export default function FormTrade({
         .min(0.001, (param) => `Must be more or equal to ${param.min}`)
         .required('Required')
         .nullable(),
-      datatoken: Yup.number()
+      datatoken: Yup.string()
         .max(
           Number(maximumDt),
           (param) => `Must be less or equal to ${param.max}`

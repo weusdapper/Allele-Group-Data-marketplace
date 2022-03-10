@@ -58,7 +58,7 @@ export default function TradeInput({
           form: any
         }) => (
           <Input
-            type="text"
+            type="number"
             name={name}
             max={`${item?.maxAmount}`}
             min="0"
