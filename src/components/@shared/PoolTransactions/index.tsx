@@ -169,7 +169,10 @@ export default function PoolTransactions({
       const dtList: string[] = []
 
       for (let i = 0; i < data.length; i++) {
-        dtList.push(data[i]?.datatoken?.address)
+        // we only show tx with a datatoken address
+        if (data[i]?.datatoken?.address) {
+          dtList.push(data[i]?.datatoken?.address)
+        }
       }
 
       if (dtList.length === 0) {
@@ -180,12 +183,16 @@ export default function PoolTransactions({
       const ddoList = await getAssetsFromDtList(dtList, chainIds, cancelToken)
 
       for (let i = 0; i < data.length; i++) {
-        poolTransactions.push({
-          ...data[i],
-          networkId: getAsset(ddoList, data[i].datatoken.address).chainId,
-          asset: getAsset(ddoList, data[i].datatoken.address)
-        })
+        // we only show tx with a datatoken address
+        if (data[i]?.datatoken?.address) {
+          poolTransactions.push({
+            ...data[i],
+            networkId: getAsset(ddoList, data[i].datatoken.address).chainId,
+            asset: getAsset(ddoList, data[i].datatoken.address)
+          })
+        }
       }
+
       const sortedTransactions = poolTransactions.sort(
         (a, b) => b.timestamp - a.timestamp
       )
